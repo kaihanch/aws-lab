@@ -13,7 +13,7 @@ deploy:
       secure: $aws_secure_key
     local_dir: dpl_cd_upload
     skip_cleanup: true
-    region: us-west-2
+    region: us-east-2
     on:
       branch: master
     bucket: "kaihan-test-codedeploy"
@@ -25,6 +25,6 @@ deploy:
     key: latest.zip
     application: kaihan-app
     deployment_group: master
-    region: us-west-2
+    region: us-east-2
     on:
       branch: master
